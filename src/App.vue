@@ -4,11 +4,16 @@
     <router-link to='/'> Home</router-link>
     <router-link to='/contact'>Contact </router-link>
   </div>
-  <router-view></router-view>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
 
-}
+export default defineComponent({
+  name: 'App',
+  components: {}
+})
 </script>

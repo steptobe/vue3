@@ -1,14 +1,18 @@
 <template>   
-  <div class="contact"></div>
+  <div class="contact">
+    <span>
+      88
+    </span>
+  </div>
 </template>
-<script>
+<script lang="ts">
 import {
   computed,
   watch,
   reactive,
   toRefs,
   defineComponent
-} from '@vue/composition-api'
+} from 'vue'
 export default defineComponent({
   name: 'contact',
 
@@ -17,13 +21,16 @@ export default defineComponent({
   components: {},
 
   setup(props, ctx) {
-    const params = reactive({})
+    const state = reactive({})
     return { ...toRefs(state) }
   }
 })
 </script>
 
-<style lang="scss" scoped>
+<style  lang="scss">
 .contact  {
+  span{
+    color: aqua;
+  }
 }
 </style>

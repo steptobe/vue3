@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-
+  <div class="contact">
+      shouye1
   </div>
 
 </template>
-<script>
+<script lang="ts">
 import {
   computed,
   watch,
   reactive,
   toRefs,
   defineComponent
-} from '@vue/composition-api'
+} from 'vue'
 export default defineComponent({
   name: 'home',
 
@@ -20,7 +20,7 @@ export default defineComponent({
   components: {},
 
   setup(props, ctx) {
-    const params = reactive({})
+    const state = reactive({})
     return { ...toRefs(state) }
   }
 })
