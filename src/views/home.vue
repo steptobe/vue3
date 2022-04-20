@@ -1,6 +1,6 @@
 <template>
-  <div class="contact">
-      shouye1
+  <div class="contact" >
+     <span  @click="openmessage">点击222</span>
   </div>
 
 </template>
@@ -21,7 +21,10 @@ export default defineComponent({
 
   setup(props, ctx) {
     const state = reactive({})
-    return { ...toRefs(state) }
+    const openmessage = ()=>{
+      ctx.root.$message.info('hhaha')
+    }
+    return { ...toRefs(state),openmessage }
   }
 })
 </script>
